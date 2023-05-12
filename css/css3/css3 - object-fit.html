@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>css3</title>
+    <style type="text/css">
+        img{
+            border: 1px solid red;
+        }
+       .img1{
+            width: 100px;
+            height: 200px;
+            object-fit: cover;
+       }
+       .img2{
+            width: 100px;
+            height: 200px;
+            object-fit: contain;
+       }
+       .img3{
+            width: 100px;
+            height: 200px;
+            object-fit: none;
+       }
+       .img4{
+            width: 200px;
+            height: 100px;
+            object-fit: none;
+       }
+        
+    </style>
+</head>
+<body>
+    <img src="../bug.jpg">
+    <img class="img1" src="../bug.jpg">
+    <img class="img2" src="../bug.jpg">
+    <img class="img3" src="../bug.jpg">
+    <img class="img4" src="../bug.jpg">
+</body>
+</html>

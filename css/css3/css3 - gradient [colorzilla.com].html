@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>css3</title>
+    <style type="text/css">
+        div{
+            width: 100px;
+            height: 100px;
+            margin: 15px;
+            float: left;
+            border: 1px solid red;
+        }
+        .box1{ 
+            background: #f85032;
+background: -moz-linear-gradient(left,  #f85032 0%, #f16f5c 50%, #f6290c 51%, #f02f17 71%, #e73827 100%);
+background: -webkit-linear-gradient(left,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%);
+background: linear-gradient(to right,  #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=1 );
+
+         }
+        .box2{ 
+background: #f9e20e;
+background: -moz-radial-gradient(center, ellipse cover,  #f9e20e 0%, #6e7774 26%, #0eea80 43%, #0a0e0a 71%, #0a0809 100%);
+background: -webkit-radial-gradient(center, ellipse cover,  #f9e20e 0%,#6e7774 26%,#0eea80 43%,#0a0e0a 71%,#0a0809 100%);
+background: radial-gradient(ellipse at center,  #f9e20e 0%,#6e7774 26%,#0eea80 43%,#0a0e0a 71%,#0a0809 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9e20e', endColorstr='#0a0809',GradientType=1 );
+
+}
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>

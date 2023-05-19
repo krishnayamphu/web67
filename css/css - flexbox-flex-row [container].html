@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flexbox</title>
+    <style type="text/css">
+        .container{
+            display: flex;
+            border: 1px solid red;
+            width: 80%;
+            margin: 15px auto;
+        }
+        .item{ background-color:orange; }
+        .item:nth-child(even){ background-color: green; }
+        .row{flex-direction: row;}
+        .row-reverse{flex-direction: row-reverse;}
+        .column{flex-direction: column;}
+        .column-reverse{flex-direction: column-reverse;}
+        
+    </style>
+</head>
+<body>
+
+
+<div class="container row">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+<div class="container row-reverse">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+<div class="container column">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+
+<div class="container column-reverse">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</div>
+</body>
+</html>

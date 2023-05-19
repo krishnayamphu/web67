@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flexbox</title>
+    <style type="text/css">
+        .container{
+            display: flex;
+            border: 1px solid red;
+            margin: 15px auto;
+        }
+        .item{ background-color:orange;}
+        .item:nth-child(even){ background-color: green; }
+        .item:last-child{ background-color:purple ; }
+        
+        .order-1{order: 1;}
+        .order-2{order: 2;}
+        .order-3{order: 3;}
+        
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="item order-1">Item 1</div>
+    <div class="item order-2">Item 2</div>
+    <div class="item order-3">Item 3</div>
+</div>
+
+<div class="container">
+    <div class="item order-3">Item 1</div>
+    <div class="item order-2">Item 2</div>
+    <div class="item order-1">Item 3</div>
+</div>
+
+<div class="container">
+    <div class="item order-2">Item 1</div>
+    <div class="item order-3">Item 2</div>
+    <div class="item order-1">Item 3</div>
+</div>
+
+
+
+</body>
+</html>

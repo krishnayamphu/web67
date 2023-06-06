@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>javascript</title>
+</head>
+<body>
+    <p id="content"></p>
+    <input type="text" id="username">
+    <input type="number" id="amt" value="1000">
+    <img id="myImage">
+
+   <script>
+    let p=document.getElementById("content");
+    p.innerHTML="Hello Wolrd";
+    p.style.color="green";
+    p.align="center";
+
+    document.getElementById("username").value="Aptech";
+    let data=document.getElementById("amt").value;
+    alert(data);
+
+    document.getElementById("myImage").src="bug.jpg";
+    document.getElementById("myImage").width="100";
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid red;
+      }
+      thead {
+        background-color: aqua;
+      }
+      tbody {
+        background-color: rgb(215, 255, 242);
+      }
+      tfoot {
+        background-color: orange;
+      }
+      .bg-red {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+      </tr>
+      <tr>
+        <td>Ram</td>
+        <td>Patan</td>
+      </tr>
+      <tr>
+        <td>Hari</td>
+        <td>Jawalakhel</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <table>
+      <tr>
+        <th colspan="2">Amount</th>
+      </tr>
+      <tr>
+        <td>Rs</td>
+        <td>Paisa</td>
+      </tr>
+    </table>
+    <hr />
+    <table>
+      <tr>
+        <th rowspan="2">Country</th>
+        <td>China</td>
+      </tr>
+      <tr>
+        <td>India</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <table>
+      <thead>
+        <tr>
+          <th>SN</th>
+          <th>Items</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td class="bg-red">Apple</td>
+          <td>450</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Mango</td>
+          <td>100</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2">Total</th>
+          <th>550</th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

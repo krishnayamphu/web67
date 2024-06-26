@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      div {
+        width: 200px;
+        height: 150px;
+        border: 1px solid red;
+        float: left;
+        margin: 15px;
+        padding: 15px;
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+      }
+      .hidden {
+        overflow: hidden;
+      }
+      .scroll {
+        overflow: scroll;
+      }
+      img {
+        width: 300px;
+      }
+
+      .box1 {
+        padding: 0;
+        overflow-y: hidden;
+      }
+      .box2 {
+        padding: 0;
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur
+        consectetur, neque nesciunt soluta omnis modi quos reiciendis similique
+        libero laboriosam delectus magnam nostrum quam laborum quidem vel
+        officiis beatae iure.
+      </p>
+    </div>
+    <div class="hidden">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur
+        consectetur, neque nesciunt soluta omnis modi quos reiciendis similique
+        libero laboriosam delectus magnam nostrum quam laborum quidem vel
+        officiis beatae iure.
+      </p>
+    </div>
+
+    <div class="scroll">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur
+        consectetur, neque nesciunt soluta omnis modi quos reiciendis similique
+        libero laboriosam delectus magnam nostrum quam laborum quidem vel
+        officiis beatae iure.
+      </p>
+    </div>
+
+    <div class="box1">
+      <img src="ai.png" alt="" />
+    </div>
+    <div class="box2">
+      <img src="ai.png" alt="" />
+    </div>
+  </body>
+</html>

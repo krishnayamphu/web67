@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      form {
+        background-color: antiquewhite;
+        width: 300px;
+        margin: 30px auto;
+        padding: 15px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 5px 10px;
+        border: none;
+      }
+      button {
+        padding: 2px 15px;
+      }
+      input:focus {
+        outline: 1px solid green;
+      }
+      input[type="password"]:focus {
+        outline: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="">Username</label>
+      <input type="text" />
+      <label for="">Password</label>
+      <input type="password" />
+      <button>Login</button>
+    </form>
+  </body>
+</html>

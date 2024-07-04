@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Form</legend>
+        <label for="name">Username</label>
+        <input type="text" placeholder="Enetr username" required />
+        <br /><br />
+        <label>Password</label>
+        <input type="password" placeholder="password" />
+        <br /><br />
+        <label>Email</label>
+        <input type="email" placeholder="example@email.com" />
+        <br /><br />
+        <label>Search</label>
+        <input type="search" placeholder="search" />
+        <br /><br />
+        <label>Number</label>
+        <input type="number" />
+        <br /><br />
+        <label>Course</label>
+        <input type="checkbox" name="course[]" value="basic" checked />Basic
+        <input type="checkbox" name="course[]" value="web" />Web <br /><br />
+
+        <label>Gender</label>
+        <input type="radio" name="g" value="m" />Male
+        <input type="radio" name="g" value="f" />Female
+
+        <br /><br />
+        <label>Date</label>
+        <input type="date" />
+
+        <br /><br />
+        <label>Time</label>
+        <input type="time" />
+        <br /><br />
+        <label>Datetime-local</label>
+        <input type="datetime-local" />
+
+        <br /><br />
+        <label>Range</label>
+        <input type="range" min="0" max="100" value="50" />
+
+        <br /><br />
+        <label>Color</label>
+        <input type="color" />
+        <br /><br />
+        <label>File</label>
+        <input type="file" multiple />
+
+        <br /><br />
+        <label>Select</label>
+        <select name="country" id="">
+          <optgroup label="Asia">
+            <option value="nepal">Nepal</option>
+          </optgroup>
+          <optgroup label="Europe">
+            <option value="france">France</option>
+          </optgroup>
+        </select>
+
+        <br /><br />
+        <label>Textarea</label>
+        <textarea name="" id="" rows="5" cols="20"></textarea>
+
+        <br /><br />
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <input type="button" value="button" />
+      </fieldset>
+    </form>
+  </body>
+</html>

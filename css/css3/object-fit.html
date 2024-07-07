@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css 3</title>
+    <style>
+      img {
+        width: 300px;
+        height: 300px;
+        border: 5px solid red;
+      }
+      .cover {
+        object-fit: cover;
+      }
+      .contain {
+        object-fit: contain;
+      }
+      .left {
+        object-position: left;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="team-02.jpg" alt="" />
+    <img class="cover" src="team-02.jpg" alt="" />
+    <img class="contain" src="team-02.jpg" alt="" />
+    <img class="contain left" src="team-02.jpg" alt="" />
+  </body>
+</html>

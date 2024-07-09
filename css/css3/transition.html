@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css 3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        margin: 15px;
+      }
+      div:hover {
+        background-color: blue;
+        border-radius: 50%;
+        transition-property: all;
+        transition-duration: 5s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+      }
+
+      p {
+        background-color: antiquewhite;
+        margin: 15px;
+        padding: 15px;
+      }
+      p:hover {
+        font-size: 20px;
+        transition: all 2s ease 0s;
+      }
+
+      section {
+        width: 200px;
+        height: 100px;
+        background-color: green;
+      }
+      section:hover {
+        width: 800px;
+        background-color: purple;
+        transition: all 2s;
+      }
+      img {
+        margin: 15px;
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      img:hover {
+        opacity: 0.5;
+        box-shadow: 0px 0px 5px 2px #4e4e4e;
+        transition: all 500ms;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+      incidunt amet, inventore ratione quasi, quam sapiente voluptate debitis
+      obcaecati voluptas dolore maxime eligendi nemo, quaerat facilis ea
+      quibusdam reiciendis provident.
+    </p>
+
+    <section></section>
+
+    <img src="bg.PNG" alt="" />
+  </body>
+</html>

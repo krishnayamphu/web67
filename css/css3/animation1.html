@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css 3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      @keyframes changePic {
+        0% {
+          background-image: url(team-01.jpg);
+        }
+        100% {
+          background-image: url(team-02.jpg);
+        }
+      }
+
+      figure {
+        width: 150px;
+        height: 200px;
+        border: 5px solid red;
+        background-image: url(team-01.jpg);
+        background-size: cover;
+        margin: 15px auto;
+        animation: changePic 2s ease infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <figure></figure>
+  </body>
+</html>

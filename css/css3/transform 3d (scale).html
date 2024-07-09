@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        float: left;
+        margin: 15px;
+        transition: all 1s;
+      }
+
+      section {
+        width: 600px;
+        height: 200px;
+        border: 5px solid red;
+        margin: 15px;
+        overflow: hidden;
+        perspective: 500px;
+      }
+      .box1:hover {
+        transform: scaleX(2);
+      }
+      .box2:hover {
+        transform: scaleY(2);
+      }
+      .box3:hover {
+        transform: scaleZ(2);
+      }
+      .box4:hover {
+        transform: scale3d(2, 2, 2);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="box1">scaleX</div>
+      <div class="box2">scaleY</div>
+      <div class="box3">scaleeZ</div>
+      <div class="box4">scale3d</div>
+    </section>
+  </body>
+</html>

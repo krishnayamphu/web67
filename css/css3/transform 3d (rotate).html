@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        float: left;
+        margin: 15px;
+        transition: all 1s;
+      }
+
+      section {
+        width: 600px;
+        height: 200px;
+        border: 5px solid red;
+        margin: 15px;
+        overflow: hidden;
+        perspective: 500px;
+      }
+      .box1:hover {
+        transform: rotateX(180deg);
+      }
+      .box2:hover {
+        transform: rotateY(360deg);
+      }
+      .box3:hover {
+        transform: rotateZ(45deg);
+      }
+      .box4:hover {
+        transform: rotate3d(1, 1, 1, 45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="box1">rotateX</div>
+      <div class="box2">rotateY</div>
+      <div class="box3">rotateZ</div>
+      <div class="box4">rotate3d</div>
+    </section>
+  </body>
+</html>

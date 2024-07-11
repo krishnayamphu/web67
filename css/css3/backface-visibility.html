@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css3</title>
+    <style>
+      section {
+        border: 5px solid red;
+        padding: 15px;
+        margin: 15px;
+        overflow: hidden;
+        perspective: 500px;
+      }
+      div {
+        color: white;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        float: left;
+        margin: 15px;
+      }
+      div:hover {
+        transform: rotateY(180deg);
+        transition: all 1s;
+      }
+      .box1 {
+        backface-visibility: visible;
+      }
+      .box2 {
+        backface-visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="box1">box1</div>
+      <div class="box2">box2</div>
+    </section>
+  </body>
+</html>

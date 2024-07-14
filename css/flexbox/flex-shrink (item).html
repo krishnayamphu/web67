@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .row {
+        border: 1px solid red;
+        display: flex;
+        margin: 15px;
+        width: 400px;
+      }
+      .col {
+        background-color: green;
+        width: 195px;
+      }
+      .col:nth-child(even) {
+        background-color: orange;
+      }
+      .col:last-child {
+        background-color: purple;
+      }
+      .shrink-0 {
+        flex-shrink: 0;
+      }
+
+      .shrink-1 {
+        flex-shrink: 1;
+      }
+      .shrink-2 {
+        flex-shrink: 2;
+      }
+      .shrink-3 {
+        flex-shrink: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col">col1</div>
+      <div class="col">col2</div>
+      <div class="col">col3</div>
+    </div>
+
+    <div class="row">
+      <div class="col shrink-0">col1</div>
+      <div class="col shrink-0">col2</div>
+      <div class="col shrink-0">col3</div>
+    </div>
+
+    <div class="row">
+      <div class="col shrink-1">col1</div>
+      <div class="col shrink-1">col2</div>
+      <div class="col shrink-2">col3</div>
+    </div>
+    <div class="row">
+      <div class="col shrink-1">col1</div>
+      <div class="col shrink-3">col2</div>
+      <div class="col shrink-1">col3</div>
+    </div>
+    <div class="row">
+      <div class="col shrink-0">col1</div>
+      <div class="col shrink-2">col2</div>
+      <div class="col shrink-1">col3</div>
+    </div>
+    <div class="row" style="width: 250px">
+      <div class="col shrink-1">col1</div>
+      <div class="col shrink-3">col2</div>
+    </div>
+    <div class="row" style="width: 250px">
+      <div class="col shrink-3">col1</div>
+      <div class="col shrink-1">col2</div>
+    </div>
+  </body>
+</html>

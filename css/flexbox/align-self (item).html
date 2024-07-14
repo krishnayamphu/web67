@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .row {
+        border: 1px solid red;
+        display: flex;
+        margin: 15px;
+        height: 100px;
+        width: 200px;
+        float: left;
+        align-items: flex-start;
+      }
+      .col {
+        background-color: green;
+      }
+      .col:nth-child(even) {
+        background-color: orange;
+      }
+      .col:last-child {
+        background-color: purple;
+      }
+      .center {
+        align-self: center;
+      }
+      .stretch {
+        align-self: stretch;
+      }
+      .flex-end {
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col">col1</div>
+      <div class="col">col2</div>
+      <div class="col">col3</div>
+    </div>
+
+    <div class="row">
+      <div class="col">col1</div>
+      <div class="col">col2</div>
+      <div class="col center">col3</div>
+    </div>
+
+    <div class="row">
+      <div class="col stretch">col1</div>
+      <div class="col">col2</div>
+      <div class="col">col3</div>
+    </div>
+    <div class="row">
+      <div class="col">col1</div>
+      <div class="col">col2</div>
+      <div class="col flex-end">col3</div>
+    </div>
+  </body>
+</html>

@@ -9,10 +9,33 @@
   --accent-color: #f26c4f;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
 /* formatting */
 .container {
   width: 90%;
   margin: 0 auto;
+}
+
+/* layout */
+.row {
+  display: flex;
+}
+.col {
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0 15px;
 }
 
 /* header */
@@ -79,4 +102,93 @@ nav ul li.active a {
 .hero-content .social-links a {
   text-decoration: none;
   color: rgb(157, 157, 157);
+  padding: 10px;
+}
+
+.hero-content .goto-bottom {
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  overflow: hidden;
+}
+.goto-bottom a {
+  color: white;
+  text-decoration: none;
+  width: 50px;
+  height: 40px;
+  display: inline-block;
+  position: relative;
+}
+.goto-bottom a i {
+  position: absolute;
+  background-color: var(--accent-color);
+  width: 50px;
+  height: 44px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  /* left: 50%; */
+  top: 1px;
+}
+.icon-first {
+  transform: translateX(-50px);
+}
+.icon-second {
+  background-color: green !important;
+}
+.goto-bottom a:hover .icon-first {
+  transform: translateX(0px);
+  transition: all 0.5s;
+}
+.goto-bottom a:hover .icon-second {
+  transform: translateX(50px);
+  transition: all 0.5s;
+}
+
+/* #services */
+#services {
+  background-color: var(--primary-color);
+  padding: 60px 0;
+  color: white;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#services .row {
+  margin-bottom: 30px;
+}
+#services .col {
+  width: 33.33%;
+}
+
+#services i {
+  color: var(--accent-color);
+  font-size: 40px;
+  padding: 30px 0;
+}
+
+#services h2 {
+  padding-bottom: 15px;
+}
+
+#services a {
+  display: none;
+  text-decoration: none;
+  color: white;
+}
+
+#services span {
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--accent-color);
+}
+
+#services .card:hover {
+  transition: all 0.5s;
+}
+#services .card:hover a {
+  display: inline-block;
+  transition: all 0.5s;
 }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css 3</title>
+    <style>
+      div {
+        width: 200px;
+        height: 100px;
+        border: 5px solid red;
+        float: left;
+        margin: 15px;
+      }
+      .box1 {
+        background-image: radial-gradient(red, blue);
+      }
+      .box2 {
+        background-image: radial-gradient(circle, red, blue);
+      }
+
+      .box3 {
+        background-image: radial-gradient(circle at 20% 50%, red, blue);
+      }
+      .box4 {
+        background-image: radial-gradient(
+          circle,
+          red,
+          green,
+          blue,
+          yellow,
+          purple
+        );
+      }
+      .box5 {
+        background-image: radial-gradient(farthest-side at 50% 20%, red, blue);
+      }
+      .box6 {
+        background-image: radial-gradient(closest-corner at 50% 70%, red, blue);
+      }
+      .box7 {
+        background-image: radial-gradient(
+          circle,
+          red 25%,
+          blue 25%,
+          blue 75%,
+          green 75%
+        );
+      }
+      .box8 {
+        background-image: -webkit-repeating-radial-gradient(
+          circle,
+          yellow,
+          blue 25%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+  </body>
+</html>

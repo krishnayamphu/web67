@@ -1,0 +1,16 @@
+#primaryNav .navbar-brand {
+  font-size: 30px !important;
+  letter-spacing: 10px;
+  font-weight: 700;
+}
+
+#primaryNav a.active {
+  color: #e54b4b;
+}
+#hero-banner {
+  background-image: url(../images/2.jpg);
+  background-size: cover;
+}
+#hero-banner h1 {
+  font-size: 56px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+    <style>
+      .flex {
+        width: 500px;
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <input oninput="getRedColor()" type="range" id="red" min="0" max="255" />
+    <input
+      oninput="getGreenColor()"
+      type="range"
+      id="green"
+      min="0"
+      max="255"
+    />
+    <input oninput="getBlueColor()" type="range" id="blue" min="0" max="255" />
+    <div class="flex">
+      <p>Red: <span id="txtred"></span></p>
+      <p>Green: <span id="txtgreen"></span></p>
+      <p>Blue: <span id="txtblue"></span></p>
+    </div>
+    <script>
+      function getRedColor() {
+        let data = document.getElementById("red").value;
+        document.getElementById("txtred").innerHTML = data;
+        r = data;
+      }
+      function getGreenColor() {
+        let data = document.getElementById("green").value;
+        document.getElementById("txtgreen").innerHTML = data;
+        g = data;
+      }
+      function getBlueColor() {
+        let data = document.getElementById("blue").value;
+        document.getElementById("txtblue").innerHTML = data;
+        b = data;
+      }
+    </script>
+  </body>
+</html>

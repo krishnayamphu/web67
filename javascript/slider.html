@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+  </head>
+  <body>
+    <input oninput="textData()" type="range" id="demo" min="0" max="100" />
+    <p>Value: <span id="txtlength"></span></p>
+    <script>
+      function textData() {
+        let data = document.getElementById("demo").value;
+        document.getElementById("txtlength").innerHTML = data;
+      }
+    </script>
+  </body>
+</html>

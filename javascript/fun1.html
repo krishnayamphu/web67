@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+  </head>
+  <body>
+    <button onclick="setColor()">Fill Background Color</button>
+    <button onclick="resetColor()">Reset</button>
+    <hr />
+    <input type="text" id="name" value="Ram" />
+    <button onclick="getValue()">Get</button>
+    <script>
+      function setColor() {
+        document.bgColor = "red";
+      }
+
+      function resetColor() {
+        document.bgColor = "white";
+      }
+
+      function getValue() {
+        let v = document.getElementById("name").value;
+        alert(v);
+      }
+    </script>
+  </body>
+</html>

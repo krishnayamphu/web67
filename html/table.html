@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html</title>
+    <style>
+      table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        margin: 15px auto;
+      }
+      th,
+      td {
+        border: 1px solid red;
+        padding: 5px;
+      }
+      thead {
+        background-color: rgb(43, 137, 226);
+      }
+
+      tfoot {
+        background-color: rgb(71, 71, 71);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+      </tr>
+
+      <tr>
+        <td>Ram</td>
+        <td>Patan</td>
+      </tr>
+      <tr>
+        <td>Sita</td>
+        <td>Jawalakhel</td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th colspan="2">Amount</th>
+      </tr>
+      <tr>
+        <td>Rs</td>
+        <td>Paisa</td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th rowspan="2">Country</th>
+        <td>Japan</td>
+      </tr>
+      <tr>
+        <td>Korea</td>
+      </tr>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Items</th>
+          <th>Rate</th>
+          <th>Qty</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Apple</td>
+          <td>450</td>
+          <td>2</td>
+          <td>900</td>
+        </tr>
+        <tr>
+          <td>Apple</td>
+          <td>450</td>
+          <td>2</td>
+          <td>900</td>
+        </tr>
+        <tr>
+          <td>Apple</td>
+          <td>450</td>
+          <td>2</td>
+          <td>900</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="3">Total</th>
+          <th>2700</th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
